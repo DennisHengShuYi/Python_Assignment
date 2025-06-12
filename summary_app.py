@@ -1128,3 +1128,38 @@ with st.expander("Comparative analysis: Dogecoin vs XRP"):
             ax3.grid(True)
             st.pyplot(fig3)
 
+st.header("Task 7: Conclusion and Future Work")
+
+# Create three columns
+col1, col2, col3 = st.columns(3)
+
+# Column 1: Key Findings
+with col1:
+    st.subheader("📌 Key Takeaways")
+    st.markdown("""
+    - **XRP** had higher Reddit sentiment and search interest.
+    - **DOGE** showed more stable sentiment patterns.
+    - **DOGE** aligned better with technical indicators.
+    - **XRP** was more volatile in both price and sentiment.
+    """)
+
+# Column 2: Modeling Results
+with col2:
+    st.subheader("🧠 Modeling Insights")
+    st.markdown("""
+    - **Gradient Boosting** performed best for DOGE (R² ≈ 0.95).
+    - **SVR** was the top model for XRP (R² ≈ 0.99).
+    - **LSTM** underperformed on both coins.
+    - **Engineered features** boosted accuracy significantly.
+    """)
+
+# Column 3: Future Work
+with col3:
+    st.subheader("🚀 Future Directions")
+    st.markdown("""
+    - Explore newer coins (e.g. FLOKI, PEPE).
+    - Try **transformer models** for time series (e.g. TFT).
+    - Add **real-time dashboarding** with live data.
+    - Integrate **TikTok, YouTube, Telegram** sentiment.
+    - Test **trading strategies** using model predictions.
+    """)
